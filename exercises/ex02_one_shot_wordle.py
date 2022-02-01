@@ -1,6 +1,6 @@
 """ex02_one_shot_wordle: a simplified wordle."""
 
-_author_ = "730480180"
+__author__ = "730480180"
 
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
