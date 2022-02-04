@@ -22,4 +22,7 @@
     "python.testing.pytestArgs": [],
     "python.envFile": "${workspaceFolder}/.env",
     "python.analysis.typeCheckingMode": "basic",
+    "cSpell.words": [
+        "emojified"
+    ],
 }
