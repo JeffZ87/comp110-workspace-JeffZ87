@@ -1,4 +1,22 @@
-"""Draws trees, birds, and a house at random location using the turtle library."""
+"""
+Draws trees, birds, and a house at random location using the turtle library.
+
+ This attempts critera 2, you can find usage at line 33, 34, 35.
+This attempts critera 5, you can find usage at line 224 & 228.
+ This attempts critera 4, you can find usage at line 47-56.
+  This attempts critera 3, you can find usage at line 117-121.
+
+Criteria:
+0: line 21, 32, 53, 71
+1: line 216
+2: line 232-237
+3: line 135-139
+4: line 65-74
+5: line 241
+6: line 1-20
+7: line 27, 38, 59, 77, 82, 103, 125, 148, 164
+8: line 227 turn the turtle object into an actual turtle
+"""
 
 __author__ = "730480180"
 
@@ -203,6 +221,7 @@ def draw_house(pen: Turtle, x: int, y: int, shape_fill: bool) -> None:
 
 
 def main() -> None:
+    """Then entry point of my code."""
     colormode(255)
     wang_ba: Turtle = Turtle()
     wang_ba.shape("turtle")
@@ -214,7 +233,6 @@ def main() -> None:
         draw_tree(wang_ba, randint(-700, -200), randint(-300, 400))
         draw_tree(wang_ba, randint(200, 700), randint(-300, 400))
         draw_tree(wang_ba, randint(-500, 500), randint(100, 500))
-
         i += 1
 
     # draws bird
