@@ -1,5 +1,5 @@
 {
-    "files.exclude":{
+    "files.exclude": {
         /* To hide additional directories in Explorer, add them here: */
         "**/.git": true,
         "**/.gitkeep": true,
@@ -23,6 +23,8 @@
     "python.envFile": "${workspaceFolder}/.env",
     "python.analysis.typeCheckingMode": "basic",
     "cSpell.words": [
-        "emojified"
+        "emojified",
+        "exitonclick",
+        "penup"
     ],
 }
