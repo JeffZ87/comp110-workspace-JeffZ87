@@ -105,7 +105,7 @@ def draw_arrow(pen: Turtle, x: int, y: int, length: int, point_direction: float,
 
 
 def draw_tree(pen: Turtle, x: int, y: int) -> None:
-    """Draws a tree with top at {x} and {y}"""
+    """Draws a tree with top at {x} and {y}."""
     leaf_height: int = 90
     leaf_width: int = 60
     trunk_height: int = 90
@@ -128,7 +128,7 @@ def draw_tree(pen: Turtle, x: int, y: int) -> None:
 
 
 def draw_bird(pen: Turtle, x: int, y: int) -> None:
-    """Draws a bird with its head at {x} and {y}"""
+    """Draws a bird with its head at {x} and {y}."""
     head_wings_displacement: int = 25
     tail: int = x - head_wings_displacement - 20
     draw_arrow(pen, x, y, 20, 0, 45)
@@ -144,7 +144,7 @@ def draw_bird(pen: Turtle, x: int, y: int) -> None:
 
 
 def draw_house(pen: Turtle, x: int, y: int, shape_fill: bool) -> None:
-    """Draws a house with its highest point at {x} and {y}"""
+    """Draws a house with its highest point at {x} and {y}."""
     # draws roof 
     roof_height: int = 120
     roof_width: int = 270
