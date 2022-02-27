@@ -3,10 +3,8 @@
 __author__ = "730480180"
 
 import pytest
-from exercises.ex06.dictionary import count, favorite_color, invert
-# from dictionary import invert
-# from dictionary import favorite_color
-# from dictionary import count
+# from exercises.ex06.dictionary import count, favorite_color, invert
+from dictionary import invert, favorite_color, count
 
 
 def test_invert_duplicate_key_value() -> None:
