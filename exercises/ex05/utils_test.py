@@ -2,11 +2,11 @@
 
 __author__ = "730480180"
 
-# from exercises.ex05.utils import only_evens
-# from exercises.ex05.utils import sub
-# from exercises.ex05.utils import concat
+from exercises.ex05.utils import only_evens
+from exercises.ex05.utils import sub
+from exercises.ex05.utils import concat
 
-from utils import only_evens, sub, concat
+# from utils import only_evens, sub, concat
 
 
 def test_only_even_empty_list() -> None: 
