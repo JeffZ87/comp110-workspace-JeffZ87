@@ -10,9 +10,8 @@ def invert(origin: dict[str, str]) -> dict[str, str]:
 
     for key in origin:
         # checks for repetitive values
-        for value in value_list:
-            if value == origin[key]:
-                raise KeyError("KeyError")
+        if origin[key] in value_list:
+            raise KeyError("KeyError")
 
         value_list.append(origin[key])
         invert_dict[origin[key]] = key
