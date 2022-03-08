@@ -1,15 +1,12 @@
-def test(i: list[int]) -> None:
-    i.append(i[0])
+x: int = 2
 
 
-def test_str(i: str) -> None:
-    i = ""
+def hello() -> None:
+    # x: int = 3
+    global x
+    x = 1
+    print(x)
 
 
-a: list[int] = list([10, 20, 30])
-test(a)
-print(a)
-
-string: str = "hello"
-test_str(string)
-print(string)
+hello()
+print(x)
