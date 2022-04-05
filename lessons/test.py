@@ -1,12 +1,13 @@
-x: int = 2
+class Point:
+    x: int
+    y: int
+
+    def __str__(self) -> str:
+        return "hello world"
+
+    def __repr__(self) -> str:
+        return "Point(\"hello world\")"
 
 
-def hello() -> None:
-    # x: int = 3
-    global x
-    x = 1
-    print(x)
-
-
-hello()
-print(x)
+test: Point = Point()
+print(repr(test))
