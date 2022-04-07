@@ -1,4 +1,5 @@
 from __future__ import annotations
+from typing import Union
 
 class ChristmasTreeFarm:
     plots: list[int]
@@ -20,7 +21,7 @@ class ChristmasTreeFarm:
                 self.plots[i] += 1     
             i += 1
 
-    def harvest(self, replant: bool) -> int:
+    def harvest(self, union: Union[str, int] = "", replant: bool = True) -> int:
         harvest_amount: int = 0
         i: int = 0
         while i < len(self.plots):
@@ -41,12 +42,15 @@ class ChristmasTreeFarm:
             result.plots.append(plant)
         return result
 
-    def __str__(self) -> str:
-        result: str = ""
-        for plot in self.plots:
-            result += f"{plot}, "
+    # def __str__(self) -> str:
+    #     result: str = ""
+    #     for plot in self.plots:
+    #         result += f"{plot}, "
         
-        return result
+    #     return result
+
+    def __repr__(self) -> str:
+        return "repr"
         
 
 farm: ChristmasTreeFarm = ChristmasTreeFarm(5, 2)
@@ -61,3 +65,5 @@ print(farm + farm2)
 # print(farm)
 # print(farm.harvest(False))
 # print(farm)
+
+print(str(farm))
