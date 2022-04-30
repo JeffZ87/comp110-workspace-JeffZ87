@@ -1,6 +1,7 @@
 import turtle as t
 from random import random
 
+
 def tree(x: float, y: float) -> None:
     t.penup()
     t.goto(x, y)
